@@ -76,5 +76,33 @@ namespace patternsSamples.Creational_Paterns.AbstractFactory
 
     internal abstract class AbstractFactory
     {
+        public abstract Chair ProduceChair();
+        public abstract Table ProduceTable();
+    }
+
+    internal class ModernFactory : AbstractFactory
+    {
+        public override Chair ProduceChair()
+        {
+            return new ModernChair();
+        }
+
+        public override Table ProduceTable()
+        {
+            return new ModernTable();
+        }
+    }
+
+    internal class RetroFactory : AbstractFactory
+    {
+        public override Chair ProduceChair()
+        {
+            return new RetroChair();
+        }
+
+        public override Table ProduceTable()
+        {
+            return new RetroTable();
+        }
     }
 }
