@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿// Задача: тепер необхідна можливість виготовлення повної копії стільців з певного шаблону.
+// Рішення: патерн Prototype, який дозволяє створювати копію об'єкту.
+// Примітка 1: в випадку з C#, це означає реалізацію інтерфейсу ICloneable, в загальному випадку, означає створення такого інтерфейсу окремо.
 namespace patternsSamples.Creational_Paterns.Prototype
 {
     internal class Prototype
