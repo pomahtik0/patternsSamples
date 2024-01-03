@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace patternsSamples.Creational_Paterns
+namespace patternsSamples.Creational_Paterns.Factory
 {
     internal class Factory
     {
