@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Задача: На стільці можна сидіти, чому не можна сісти на стіл? Потрібно терміново виправити!
+// Рішення: Використати клас адаптер, який буде реалізовувати сидіння на столі.
 
-namespace patternsSamples.Structural_Paterns
+namespace patternsSamples.Structural_Paterns.Adapter
 {
     internal class Adapter
     {
+
     }
 }
