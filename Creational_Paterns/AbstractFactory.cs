@@ -74,6 +74,7 @@ namespace patternsSamples.Creational_Paterns.AbstractFactory
     }
     #endregion
 
+    #region Factory
     internal abstract class AbstractFactory
     {
         public abstract Chair ProduceChair();
@@ -105,4 +106,5 @@ namespace patternsSamples.Creational_Paterns.AbstractFactory
             return new RetroTable();
         }
     }
+    #endregion
 }
