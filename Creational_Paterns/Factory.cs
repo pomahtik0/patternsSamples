@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Задача: виготовлення на якомусь меблевому заводі, стільців і столів.
+// Рішення: завод розділяється на два відділи, один з яких робить меблі-стільці, а інший меблі-столи.
 
 namespace patternsSamples.Creational_Paterns.Factory
 {
