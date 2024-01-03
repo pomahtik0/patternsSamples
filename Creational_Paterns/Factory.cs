@@ -25,6 +25,7 @@ namespace patternsSamples.Creational_Paterns.Factory
     #endregion
     internal abstract class Factory
     {
+        // тут реалізується деяка логіка
         public abstract IFurniture CreateProduct();
     }
     internal class FactoryOfChairs : Factory 
