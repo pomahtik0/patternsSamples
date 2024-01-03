@@ -3,8 +3,30 @@
 
 namespace patternsSamples.Structural_Paterns.Adapter
 {
-    internal class Adapter
+    internal interface ISit
+    {
+        public void Sit();
+    }
+
+    internal class Chair : ISit
+    {
+        public void Sit()
+        {
+            Console.WriteLine("Сижу на стільці");
+        }
+    }
+    internal class Table
     {
 
+    }
+
+    internal class AdapterForTable : ISit 
+    {
+        Table table;
+        public void Sit()
+        {
+            // some adaptation logic
+            Console.WriteLine("Сів на стіл");
+        }
     }
 }
