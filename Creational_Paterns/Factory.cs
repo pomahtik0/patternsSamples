@@ -3,6 +3,7 @@
 
 namespace patternsSamples.Creational_Paterns.Factory
 {
+    #region Furniture
     internal interface IFurniture
     {
         public void Description();
@@ -21,7 +22,7 @@ namespace patternsSamples.Creational_Paterns.Factory
             Console.WriteLine("It's a table");
         }
     }
-
+    #endregion
     internal abstract class Factory
     {
         public abstract IFurniture CreateProduct();
