@@ -19,7 +19,7 @@ namespace patternsSamples.Structural_Paterns.Decorator
     internal class MessageDecorator : IMassage
     {
         public IMassage messager { get; set; }
-        public string SendMessage()
+        public virtual string SendMessage()
         {
             return messager.SendMessage();
         }
@@ -27,15 +27,15 @@ namespace patternsSamples.Structural_Paterns.Decorator
 
     internal class EncryptMessageDecorator : MessageDecorator
     {
-        public string SendMessage()
+        public override string SendMessage()
         {
             return $"{base.SendMessage()}Encrypting\n";
         }
     }
 
     internal class CompressMessageDecorator : MessageDecorator
-    { 
-        public string SendMessage()
+    {
+        public override string SendMessage()
         {
             return $"{base.SendMessage()}Compressing\n";
         }
