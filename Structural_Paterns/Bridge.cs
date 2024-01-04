@@ -25,5 +25,28 @@ namespace patternsSamples.Structural_Paterns.Bridge
     internal interface IFurniture
     {
         public IStyle CurrentStyle { get; set; }
+        public string GetFurniture();
+    }
+
+    internal class Chair : IFurniture
+    {
+        private IStyle currentStyle;
+        public IStyle CurrentStyle { get => currentStyle; set => currentStyle = value; }
+
+        public string GetFurniture()
+        {
+            return $"this is {currentStyle} chair";
+        }
+    }
+
+    internal class Table : IFurniture
+    {
+        private IStyle currentStyle;
+        public IStyle CurrentStyle { get => currentStyle; set => currentStyle = value; }
+
+        public string GetFurniture()
+        {
+            return $"this is {currentStyle} table";
+        }
     }
 }
